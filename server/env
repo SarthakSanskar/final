@@ -1,0 +1,7 @@
+DATABASE="mongodb+srv://ngmc:Sanskar@123@samdatabaseclustername.8kpoo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+PORT=8000
+
+CLOUDINARY_CLOUD_NAME='ngmc'
+CLOUDINARY_API_KEY='225733522767338'
+CLOUDINARY_API_SECRET='JcBDHBIZOCp0ttueP1bZAcLtnjY'
+

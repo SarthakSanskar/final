@@ -1,0 +1,19 @@
+const express = require('express');
+
+const router = express.Router();
+
+//middlewares
+const {authCheck, adminCheckUpdate, adminCheckDelete ,adminCheckCreate ,authCheckCurr} = require('../middlewares/auth');
+
+
+//controllers
+const {create, read, update, remove, list, getSubs} = require('../controllers/category');
+
+
+router.post('/category' ,adminCheckCreate , create);
+router.get('/categories', list);
+router.get('/category/:slug' , read);
+router.put('/category/:slug',  adminCheckUpdate , update);
+router.delete('/category/:slug', adminCheckDelete , remove);
+router.get('/category/subs/:_id', getSubs )
+module.exports = router;
